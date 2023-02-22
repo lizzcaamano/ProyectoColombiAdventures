@@ -12,60 +12,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Bona+Nova&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/isotipo.png" />
     <title>ColombiAdventures</title>
 </head>
 <body>
 
     <header>
         <div>
-        <img class="isologo" src="" alt="logo-ColombiAdventures">
+        <img class="isologo" src="./assets/img/isologo.png" alt="logo-ColombiAdventures">
         </div>
-        <ul class="botones">
+        <ul>
             <li class="btnRegistrar"><a href="">Registrarme</a></li>
-            <li  class="btnIngresar"><a href="">Ingresar</a></li>
+            <li class="btnIngresar"><a href="">Ingresar</a></li>
         </ul>
     </header>
 
     <nav class="menu">
         <ul>
-            <li> <a href="">Promociones</a></li>
-            <li> <a href="">Sugerencias</a></li>
-            <li> <a href="">Algo diferente</a> </li>
-            <li> <a href="">Tipos de viajero</a> </li>
-            <li> <a href="">Atencion personalizada</a> </li>
+            <li> <a href="#sect-2">Promociones</a></li>
+            <li> <a href="#sect-3">Sugerencias</a></li>
+            <li> <a href="#sect-4">Algo diferente</a> </li>
+            <li> <a href="#sect-5">Tipos de viajero</a> </li>
+            <li> <a href="#sect-6">Atencion personalizada</a> </li>
         </ul>
     </nav>
 
     <main>
         <section class="sect-1">
             <div class="backgraund-1">
-                <img src="./assets/img/sect-1-backgraund1.webp" alt="nevado">
+                <img class="img1" src="./assets/img/sect-1-backgraund1.webp" alt="nevado">
             </div>
 
             <div class="backgraund-2">
-                <img src="./assets/img/sect-1-backgraund2.avif" alt="nevado2">
+                <img class="img2"src="./assets/img/sect-1-backgraund2.avif" alt="nevado2">
             </div>
-
-            <h1>¿Preparado para una nueva aventura?</h1>
-            <h2>¿Aún no conoces la nieve?</h2>
-            <p>¡NOSOTROS TE LLEVAMOS!</p>
-            <P>Por el mes de San Valentin disfruta de esta gran promoción</P>
-
-            <a class="action-1" href="#">¡VAMOS!</a>
-            <a class="action-2" href="#"> Ver otras ofertas</a>
-
-
+            <div class="sect-1-1">
+                <h1>¿Preparado para una nueva aventura?</h1>
+                <h2 class="tsec2">¿Aún no conoces la nieve?</h2>
+                <p class="tsec3">¡NOSOTROS TE LLEVAMOS!</p>
+                <P class="tsec3">Por el mes de San Valentin disfruta de esta gran promoción</P>
+    
+                <a class="action-1" href="#">¡VAMOS!</a>
+                <a class="action-2" href="#"> Ver otras ofertas</a>
+            </div>
         </section>
 
-        <section class="sect-2">
+        <section id="sect-2" class="sect-2">
             <h2 class="title-promo">Promociones</h2>
             <div class="carrusel"></div>
         </section>
 
         <hr class="linea1">
 
-        <section class="sect-3">
+        <section id="sect-3" class="sect-3">
             <div class="title-sugerencias">
             <h2>¿No sabes que visitar?</h2>
             <p>Mira alguna de estas sugerencias</p>
@@ -91,7 +90,7 @@
 
         <hr class="linea2">
 
-        <section class="sect-4">
+        <section id="sect-4"  class="sect-4">
             <h2 class="title-sect-4">¿Aún no escoges tú destino?</h2>
             <p>Aquí puedes encontrar algunos lugares diferentes a lo cotidiano</p>
             
@@ -132,7 +131,7 @@
 
         <hr class="linea3">
 
-        <section class="sect-5">
+        <section id="sect-5"  class="sect-5">
             <h2 class="title-sect-5">Tenemos un lugar especial para ti</h2>
 
         <article class="viajero-1">
@@ -170,7 +169,7 @@
         </article>
         </section>
 
-        <section class="sect-6">
+        <section id="sect-6"  class="sect-6">
 
             <article class="call-action">
                 <h3>Conoce a Colombia de pies a cabeza</h3>
@@ -197,9 +196,9 @@
 
     <footer>
         <div>
-            <img class="isologo" src="" alt="logo-ColombiAdventures">
+            <img class="isologo" src="./assets/img/isologo.png" alt="logo-ColombiAdventures">
         </div>
-        <p>Copyright © 2023 ColombiAdventures</p>
+        <p class="copy">Copyright © 2023 ColombiAdventures</p>
         <div class="redes">
             <a href=""><img src="./assets/img/foot-media-instagram.png" alt="instagram"></a>
             <a href=""><img src="./assets/img/foot-media-facebook.png" alt="facebook"></a>
