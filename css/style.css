@@ -1,22 +1,36 @@
+/*FUENTES DEL PROYECTO
+font-family: 'Bona Nova', serif; -> Titulos
+font-family: 'Barlow', sans-serif; -> Contenido
+
+*/
 *{
     margin: 0;
     padding: auto;
     box-sizing: border-box;
 }
+body{
+    background-color: #D9D9D9;
+    padding: 0 0.3%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 /*--------------------------------------ESTILOS HEADER Y MENÚ---------------------------------------*/
 header{
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #1193B8;
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
 }
 .isologo{
     padding: 15px;
     float:left;
     display: inline;
     float: left;
-    width: 400px;
-    height: 100px;
+    width: 350px;
+    height: auto;
     margin-left: 1%;
 }
 .btnRegistrar, .btnIngresar{
@@ -41,14 +55,14 @@ header ul{
 .btnRegistrar a{
     background-color: #D9D9D9;
     padding: 8px 10px;
-    border-radius: 16px;
+    border-radius: 7px;
     color: #AB5EBF;
     font-size: 15px;
  }
  .btnIngresar a{
     border: 2px solid #D9D9D9;
     padding: 6px 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #D9D9D9;
     font-size: 15px;
     
@@ -57,9 +71,12 @@ header ul{
  .menu{
     padding: 15px 0;
     width: 100%;
-    height: 55px;
+    height: auto;
     background-color: #AB5EBF;
+    margin-top: 90px;
     z-index: 2;
+    position: fixed;
+    overflow: hidden;
  }
 
 .menu ul li{
@@ -67,11 +84,11 @@ header ul{
     margin: 2%;
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
-    
  }
 .menu ul li a{
     text-decoration: none;
     color: #D9D9D9;
+    font-size: 18px;
  }
  .menu ul{
     margin: 0 auto;
@@ -79,11 +96,12 @@ header ul{
     margin-left: 19%;
 
  }
+ .menu ul li a:hover{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+ }
 
-.menu li a:hover{
-    text-shadow: 1px 2px 1px 2px black;
-
-}
 /*--------------------------------------ESTILOS SECCIÓN 1 ---------------------------------------*/
 .sect-1{
     height: 100%;
@@ -93,13 +111,19 @@ header ul{
     justify-content: center;
     justify-items: center;
     position: relative;
+    margin-top: 10%;
 }
-.sect-1-1{
+.sect-1-promo{
+    height: auto;
+    width: 80%;
     text-align: center;
-    color: azure;
+    color: #D9D9D9;
     position: absolute;
-    top: 40%;
-    font-size:25px;
+    top: 20%;
+    font-size:30px;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: 0px 1px 80px 2px rgba(0, 0, 0, 0.473);
+    padding: 40px;
 }
 
 .img1{
@@ -111,41 +135,733 @@ header ul{
    
     height: 100%;
     width: 100%;
-    background-size: cover;
+    
     }
 .backgraund-1{
     height: auto;
     width: 100%;
     transition: 1s;
+    background-size: cover;
 }
 .backgraund-2{
     height: auto;
     width: 100%;
     transition: 1s;
+    background-size: cover;
 
 }   
 .backgraund-1:hover{
-    transform: scale(1.005);
+    transform: scale(1.006);
 }
 .backgraund-2:hover{
-    transform: scale(1.005);
+    transform: scale(1.006);
+}
+.sect-1 h1{
+    text-align: center;
+    font-size: 49px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    padding: 10px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-style: oblique;
+}
+.sect-1 p{
+    text-align: left;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    
+}
+.sect-1 .text2-sect1{
+    font-weight: 900;
+    font-size: 45px;
+    text-shadow: 3px 6px 10px #BF5037;
+    color: #fff;
+}
+.sect-1 .text3-sect1{
+    font-weight: 900;
+    font-size: 30px;
+    color: #AB5EBF;
+    text-shadow: 2px 1px 2px #e39bf5;
+    padding: 10px;
+}
+.sect-1 .action-1{
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 12px;
+    background-color: #AB5EBF;
+    box-shadow: 0 0px 2px 2px #AB5EBF;
+    color: #D9D9D9;
+    font-size: 22px;
 }
 
-/*--------------------------------------ESTILOS FOOTER---------------------------------------*/
+.sect-1 .action-2{
+    border-radius: 10px;
+    border: 1px solid #AB5EBF;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 100px;
+    background-color: #D9D9D9;
+    box-shadow: 0 0px 2px 2px #D9D9D9;
+    color: #D36850;
+    font-size: 22px;
+}
+.action-1:hover{
+    background-color: #e39bf5;
+    color: #AB5EBF;
+}
+.action-2:hover{
+    background-color: #D36850;
+    color: #D9D9D9;
+}
+/*--------------------------------------ESTILOS SECCIÓN 2 ---------------------------------------*/
+.sect-2{
+    background: #ac5ebf25;
+    height: auto;
+    padding: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+.carrusel {
+	width: 700px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+    box-shadow: 5px 10px 20px#000;
+}
+.carrusel ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+	animation: slide 10s infinite alternate ease-in-out;
+}
+.carrusel li {
+	width: 100%;
+    height: auto;
+	list-style: none;
+}
+.carrusel img {
+	width: 100%;
+    
+}
+@keyframes slide {
+	0% {margin-left: 0%;}
+    0% {margin-left: 0%;}
 
+	25% {margin-left: -100%;}
+    25% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+
+    70% {margin-left: -300%;}
+	70% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+	80% {margin-left: -400%;}
+
+    90% {margin-left: -400%;}
+    90% {margin-left: -400%;}
+
+	100% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+
+
+.title-promo{
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Bona Nova', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 48px;
+    color: #1193B8;
+    margin-top: 2%;
+
+
+}
+.carru1{
+    height: auto;
+    width: 100%;
+    background-color: #1193B8;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+/*Textos*/
+/*Titulo*/
+.h2carru{
+    text-align: center;
+    font-family: 'Bona Nova', serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+/*Servicios incluidos*/
+.pcarru{
+    margin-top: 15px;
+    margin-left: 30%;
+    width: 300px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+    color: #D9D9D9;
+}
+.carru1 .pcarru2, .pcarru3{
+    margin-top: 5px;
+    margin-left: 1%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+}
+
+/*Precio descuento*/
+.pcarru2{
+    font-size: 50px;
+    text-align: left;
+    color: #D9D9D9;
+}
+/*Precio Original*/
+.pcarru3{
+    padding-bottom: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: #D9D9D9;
+}
+/*--------------------------------------ESTILOS SECCIÓN 3 ---------------------------------------*/
+.sect-3{
+    padding: 3%;
+    height: auto;
+    display: flex;
+    background-color: #D9D9D9;
+    justify-content: center;
+   
+    
+   
+
+}
+.contenedor-sect-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    max-width: 2000px;
+  
+
+
+}
+
+
+.visitar0-1{
+    margin-bottom: 100px;
+    background: url(../assets/img/Sugerencias.png);
+    height: 820px;
+    width: 820px;
+    align-items: end;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    
+    
+    
+
+}
+
+.visitar1-3{
+    background: url(../assets/img/sect-3-quindio-pueblo.png);
+    height: 820px;
+    width: 820px;
+    align-items: end;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    
+    
+
+}
+
+.visitar2-3{
+    background: url(../assets/img/sect-3-faro-cartagena.png);
+    height: 820px;
+    width: 820px;
+    background-size: cover;
+    align-items: end;
+    display: flex;
+    position: relative;
+    
+    
+
+}
+
+.visitar3-3{
+    background: url(../assets/img/sect-3-tatacoa-desert.png);
+    height: 820px;
+    width: 820px;
+    background-size: cover;
+    align-items: end;
+    display: flex;
+    position: relative;
+    
+   
+}
+
+
+
+.Textosec3{
+    padding: 1%;
+    height:3cm;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1193B8;
+    opacity: 60%;
+    transition: 1s;
+    
+}
+
+.Textosec3:hover{
+    padding: 1%;
+    height:8cm;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1193B8;
+    opacity: 100%;
+    transition: 1s;
+    
+}
+
+.t3{
+    text-align: right;
+}
+
+.tt3{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1193B8;
+    opacity: 40%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.tt3:hover{
+    width: 98%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1193B8;
+    opacity: 40%;
+    transition: 1s;
+    opacity: 100%;
+}
+
+/*--------------------------------------ESTILOS SECCIÓN 4 ---------------------------------------*/
+.sect-4{
+    height: auto;
+    background-color: #D9D9D9;
+   
+}
+
+.title-sect-4{
+padding-top: 3%;
+font-family: 'Bona Nova', serif;
+font-weight: 600;
+font-size: 50px;
+text-align: center;
+color: #AB5EBF;
+
+}
+
+.tsect-4{
+font-family: 'Barlow', sans-serif; 
+font-weight: 500;
+font-size: 30px;
+text-align: center;
+color: #BF5037;
+
+
+}
+
+.contenedor-sect-4{
+    background-color: #D9D9D9;
+    padding: 5% 5% 15% 5%;
+    justify-content: center;
+    align-items: center;  
+    font-family: 'Barlow', sans-serif; 
+}
+
+/*imagen 1*/
+.lugar-1{
+    background: url(../assets/img/sect-4-parque-el-cocuy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8cm;
+    width: 100%;
+    transition: 3s;
+    object-fit: fill;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+.lugar-1, .lugar-2, .lugar-3{
+    padding: 2%;
+}
+
+.lugar-1:hover{
+    height: 8.5cm;
+    width: 100%;
+    background: url(../assets/video/Nevados.gif);
+    border-radius: none;
+    background-size: cover;
+    cursor: pointer;
+}
+.text-lugar-1{
+    position: relative;
+    top: 95%;
+    padding: 5px;
+    width: 100%;
+    background: rgba(171, 94, 191, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+
+/*imagen 2*/
+.lugar-2{
+    margin-top:15%;
+    background: url(../assets/img/sect-4-barichara.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8cm;
+    width: 100%;
+    transition: 3s;
+    object-fit: fill;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+.lugar-2:hover{
+    height: 8.5cm;
+    width: 100%;
+    background: url(../assets/video/Barichara.gif);
+    border-radius: none;
+    background-size: cover;
+    cursor: pointer;
+}
+.text-lugar-2{
+    position: relative;
+    top: 95%;
+    width: 100%;
+    background: rgba(171, 94, 191, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+
+}
+
+
+/*imagen 3*/
+.lugar-3{
+    margin-top:15%;
+    background: url(../assets/img/sect-4-ciudad-perdida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8cm;
+    width: 100%;
+    transition: 3s;
+    object-fit: fill;
+    border-radius: 5px;
+}
+.lugar-3:hover{
+    height: 8.5cm;
+    width: 100%;
+    background: url(../assets/video/Ciudadperdida.gif);
+    border-radius: none;
+    background-size: cover;
+    cursor: pointer;
+}
+.text-lugar-3{
+    position: relative;
+    top: 95%;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    background: rgba(171, 94, 191, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+
+
+.text-lugar-2 h3, .text-lugar-1 h3, .text-lugar-3 h3 {
+    margin-left: 2%;
+    padding: 0.75%;
+    color: #D9D9D9;
+    font-size: 25px;
+    font-family: 'Bona Nova', serif; 
+}
+
+.text-lugar-2 p, .text-lugar-1 p, .text-lugar-3 p {
+    margin-left: 2%;
+    padding: 0.75%;
+    color: #D9D9D9;
+    font-size: 18px;
+}
+/*--------------------------------------ESTILOS SECCIÓN 5 ---------------------------------------*/
+.sect-5 article img{
+    width: 200px;
+    
+}
+.title-viajeros{
+    text-align: center;
+    font-family: 'Bona Nova', serif;
+    margin-top: 3%;
+    color: #1193B8;
+    font-size: 40px;
+}
+.viajero-1, .viajero-2, .viajero-3{
+    margin: 0 auto;
+    margin: 50px 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.sect-5 .descripcion-1, .descripcion-2, .descripcion-3{
+    margin-left: 2%;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 36px;
+}
+.flecha{
+    text-align: right;
+    font-size: 30px;
+}
+
+.sect-5 .descripcion-1{
+    background: rgba(171, 94, 191, 0.25);
+}
+.sect-5 .descripcion-2{
+    background: rgba(17, 147, 184, 0.25);
+}
+.sect-5 .descripcion-3{
+    background: rgba(191, 80, 55, 0.25);
+}
+.descripcion-1 h3, .descripcion-1 .flecha {
+color:#AB5EBF ;
+}
+.descripcion-2 h3, .descripcion-2 .flecha{
+color: #1193B8;
+}
+.descripcion-3 h3, .descripcion-3 .flecha{
+color: #D36850;
+}
+.descripcion-1 .flecha:hover{
+    color: #e39bf5;
+    cursor: pointer;
+}
+.descripcion-2 .flecha:hover{
+    color: #8CDEF5;
+    cursor: pointer;
+}
+.descripcion-3 .flecha:hover{
+    color: #ff9c86;
+    cursor: pointer;
+}
+
+.sect-5>article h3{
+    font-family: 'Bona Nova', serif;
+    font-size: 25px;
+}
+.sect-5>article p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 5px;
+    color: #fff;
+}
+/*--------------------------------------ESTILOS SECCIÓN 6 ---------------------------------------*/
+.container-sect6{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.sect-6{
+    width: 100%;
+    height: auto;
+    background: rgba(171, 94, 191, 0.25);
+    padding: 50px 20px;
+
+}
+.call-action{
+    width: 100%;
+}
+.formulario{
+    width: 80%;
+}
+.formulario-sect-6{
+    margin-left: 10%;
+    background-color: #AB5EBF;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    padding: 4%;
+    border:1px solid #1193B8;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-sect-6 input{
+    width: 90%;
+    padding: 6px;
+    border-radius: 10px;
+    font-family: 'Barlow', sans-serif;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-color: #d9d9d94f;
+    border-bottom: 3px solid #e39bf5;
+    border-top: 3px solid #e39bf5;
+    margin-left: 3%;
+    font-size: 18px;
+    color: #fff;
+    
+}
+.formulario-sect-6 h4{
+    font-family: 'Bona Nova', serif;
+    text-align: center;
+    font-size: 30px;
+    color: #D9D9D9;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+    
+}
+.formulario-sect-6 label{
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin-left: 3%;
+    color: #D9D9D9;
+    font-weight: bold;
+}
+.btnContactar{
+    padding: 5px;
+    margin: 4% 0 0 30%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 40%;
+    height: 40px;
+    background-color: #1193B8;
+    font-size: 18px;
+    color: #fff;
+    border: #e39bf5 1px solid;
+    box-shadow: 0 1px 2px 2px #1193B8;
+}
+.btnContactar:hover{
+    background-color: #e39bf5;
+    border: #8CDEF5 1px solid;
+    cursor: pointer;
+}
+.call-action{
+    font-size: 30px;
+    padding: 10px;
+}
+.call-action .logo-color{
+    margin: 5px;
+    width: 400px;
+    margin-left: 20%;
+}
+.call-action h3{
+    font-size: 50px;
+    text-align: center;
+    margin: 3%;
+    color: #AB5EBF;
+    font-family: 'Bona Nova', serif;
+}
+.call-action p{
+    color: #fff;
+    margin: 5%;
+    font-size: 30px;
+}
+
+/*--------------------------------------ESTILOS LINEAS ---------------------------------------*/
+.linea1, .linea2, .linea3{
+    height: 5px;
+}
+.linea1{
+    background-color: #AB5EBF;
+}
+.linea2{
+    background-color: #1193B8;
+}
+.linea3{
+    background-color: #AB5EBF;
+}
+/*--------------------------------------ESTILOS FOOTER---------------------------------------*/
 footer{
     background-color: #1193B8;
     width: 100%;
     height: auto;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elements-footer{
+    width: 35%;
+    display: inline-block;
+    margin: 0 50px;
+}
+.elements-footer .logo{
+    width: 300px;
+    height: auto;
+    padding: 7px;
+    margin-top: 1%;
+
 }
 .redes{
     margin-right: 3%;
 }
-.redes img{
-    width: 40px;
-    height: auto;
-    float: right;
+.redes{
+    width: 5%;
+    height: auto;    
     margin-right: 7px;
     margin-top: 5px;
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
@@ -154,7 +870,109 @@ footer{
     text-align: center;
     color: #D9D9D9;
 }
-footer .isologo{
-    width: 350px;
-    height: auto;
+.general-redes{
+    display: flex;
+    justify-content: flex-end;
 }
+.redes{
+    width: 35px;
+}
+/*--------------------------------------ESTILOS LANDINGPAGE---------------------------------------*/
+/*--------------------------------------ESTILOS LOGIN---------------------------------------*/
+.login{ 
+    background: #1193B8;
+    background: linear-gradient(90deg, rgba(171,94,191,0.5914740896358543) 0%, rgba(17,147,184,0.5942752100840336) 35%, rgba(211,104,80,0.40379901960784315) 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto 0;
+    position: sticky;
+    overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+    }
+#form{
+    margin-top: 15%;
+    padding-bottom: 9.5%;
+    overflow: hidden;
+}
+.h1log{
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Bona Nova', serif; 
+        font-size: 30px;
+        color: #AB5EBF;
+    }
+
+.formaslog{
+    background: #fff;
+    padding:  40px 0px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: auto;
+}
+.formaslog{
+    width: 100%;
+    margin: auto;
+}
+.formaslog .grupo{
+    position: relative;
+    margin: 45px;
+    
+
+}
+.loginput{
+    background: none;
+    color: #5e5d5d;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #5e5d5d;
+    transition: 0.5s ease-in-out;
+}
+
+.loginput:focus{
+    outline: none;
+    color: #AB5EBF;
+    border-bottom: 2px solid #1193B8;
+}
+
+.labin{
+    color: #5e5d5d;;
+    font-size: 16px;
+    position: absolute;
+    bottom: 5;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+.btnlogin{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right, #1193B8, #AB5EBF, #D36850); /* Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.btnlogin:hover{
+    font-weight: 600;
+    background: linear-gradient(to left, #1193B8, #AB5EBF, #D36850); /* Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*--------------------------------------ESTILOS REGISTRO---------------------------------------*/
